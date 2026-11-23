@@ -2,12 +2,20 @@
 name = "susz-olean"
 version = "0.1.0"
 edition = "2021"
+description = "Lean 4 .olean files straight to Susz, with no ndjson in between"
 license = "MIT OR Apache-2.0"
-publish = false
+repository = "https://github.com/jasisz/susz-olean"
+readme = "README.md"
+keywords = ["lean", "lean4", "olean", "kernel", "export"]
+categories = ["encoding", "mathematics", "command-line-utilities"]
+exclude = [".github/"]
+# olean-export's minimum
+rust-version = "1.100"
 
 [dependencies]
+# exact: the records it hands over are the ones this crate maps
 olean-export = "=0.8.0"
-susz = { path = "../susz-dashu" }
+susz = "0.3.0"
 
 [profile.release]
 lto = true

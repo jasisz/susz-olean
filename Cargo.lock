@@ -727,7 +727,9 @@ checksum = "7da8b5736845d9f2fcb837ea5d9e2628564b3b043a70948a3f0b778838c5fb4f"
 
 [[package]]
 name = "susz"
-version = "0.2.1"
+version = "0.3.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "8ccb00917be1fcadc18f8cdc1194272a7e94f6e92e5fad7c91e737403859c9e9"
 dependencies = [
  "dashu-int",
  "sha2",

@@ -2,8 +2,7 @@
 //! susz's packer one by one, with no ndjson in between.
 //!
 //! The file is byte for byte what `olean-export -f ndjson | susz pack`
-//! writes (with a susz that reads `mdata` without its `data` key, which
-//! olean-export leaves out).
+//! writes.
 
 use olean_export::{
     record::{self as rec, Decl as ODecl, Head as OHead, Safety as OSafety},
